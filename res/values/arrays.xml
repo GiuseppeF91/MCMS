@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transitions">
+        <item>None</item>
+        <item>Fade</item>
+        <item>Wipe</item>
+        <item>Push</item>
+    </string-array>
+    
+</resources>

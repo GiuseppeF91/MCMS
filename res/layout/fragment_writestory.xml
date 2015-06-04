@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/textViewInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/common_padding_x"
+        android:layout_marginTop="@dimen/common_padding_y3"
+        android:text="@string/instruction_photo"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_font_size_1" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollContents"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/content_scroll_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewInstruction"
+        android:layout_marginBottom="@dimen/common_padding_y"
+        android:layout_marginLeft="@dimen/common_padding_x"
+        android:layout_marginRight="@dimen/common_padding_x"
+        android:layout_marginTop="@dimen/common_padding_y"
+        android:paddingBottom="@dimen/common_padding_y"
+        android:paddingLeft="@dimen/common_padding_x"
+        android:paddingRight="@dimen/common_padding_x"
+        android:paddingTop="@dimen/common_padding_y"
+        android:scrollbars="none" >
+        
+        <LinearLayout
+            android:id="@+id/contentsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/content_preview_size"
+            android:orientation="horizontal"
+            android:background="@color/clear" >
+
+	        <RelativeLayout
+	            android:id="@+id/layoutAddContent"
+	            android:layout_width="@dimen/content_preview_size"
+	            android:layout_height="@dimen/content_preview_size"
+	            android:layout_marginLeft="@dimen/content_horizontal_spacing"
+	            android:layout_marginRight="@dimen/content_horizontal_spacing"
+	            android:background="@color/clear" >
+
+	            <ImageButton
+	                android:id="@+id/buttonAddContent"
+	                android:layout_width="@dimen/content_preview_size"
+	                android:layout_height="@dimen/content_preview_size"
+	                android:background="@color/clear"
+	                android:contentDescription="@string/app_name"
+	                android:scaleType="fitXY"
+	                android:src="@drawable/browse_btn_large" />
+	
+	        </RelativeLayout>
+	        
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/separatorView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/scrollContents"
+        android:background="@color/separator" />
+
+    <TextView
+        android:id="@+id/textViewAudioPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/separatorView1"
+        android:layout_marginLeft="@dimen/common_padding_x"
+        android:layout_marginTop="@dimen/common_padding_y2"
+        android:text="@string/select_audio_file"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_font_size_1" />
+
+    <EditText
+        android:id="@+id/editTextAudioPath"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/audio_path_height"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textViewAudioPath"
+        android:layout_marginLeft="@dimen/common_padding_x"
+        android:layout_marginRight="@dimen/common_padding_x"
+        android:layout_marginTop="@dimen/common_padding_y"
+        android:layout_toLeftOf="@+id/buttonBrowseAudio"
+        android:background="@drawable/edittext_background"
+        android:ellipsize="none"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:inputType="text"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/common_padding_y"
+        android:paddingLeft="@dimen/common_padding_x"
+        android:paddingRight="@dimen/common_padding_x"
+        android:paddingTop="@dimen/common_padding_y"
+        android:scrollHorizontally="true"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/common_font_size_1" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/buttonBrowseAudio"
+        android:layout_width="@dimen/audio_path_height"
+        android:layout_height="@dimen/audio_path_height"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textViewAudioPath"
+        android:layout_marginRight="@dimen/common_padding_x"
+        android:layout_marginTop="@dimen/common_padding_y"
+        android:background="@color/clear"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/browse_btn_small" />
+
+    <View
+        android:id="@+id/separatorView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/editTextAudioPath"
+        android:layout_marginTop="@dimen/common_padding_y2"
+        android:background="@color/separator" />
+
+    <LinearLayout
+        android:id="@+id/layoutTransition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/separatorView2"
+        android:layout_marginBottom="@dimen/common_padding_y2"
+        android:layout_marginLeft="@dimen/common_padding_x"
+        android:layout_marginRight="@dimen/common_padding_x"
+        android:layout_marginTop="@dimen/common_padding_y2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewTransition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_transition"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_font_size_1" />
+
+        <Spinner
+            android:id="@+id/spinnerTransition"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/audio_path_height"
+            android:layout_marginTop="@dimen/common_padding_y"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/buttonDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/layoutTransition"
+        android:layout_marginLeft="@dimen/common_padding_x"
+        android:layout_marginRight="@dimen/common_padding_x"
+        android:layout_marginTop="@dimen/common_padding_y2"
+        android:adjustViewBounds="true"
+        android:background="@color/clear"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/done_btn" />
+
+    <RelativeLayout
+        android:id="@+id/layoutFilters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_trans" >
+
+        <Button
+            android:id="@+id/buttonCloseFilters"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/scrollViewFilters"
+            android:background="@color/clear" />
+
+        <ScrollView
+            android:id="@+id/scrollViewFilters"
+            android:layout_width="@dimen/filter_preview_size"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+	            
+                <RelativeLayout
+                    android:layout_width="@dimen/filter_preview_size"
+                    android:layout_height="@dimen/filter_preview_size"
+                    android:layout_marginBottom="@dimen/common_padding_y"
+                    android:background="@drawable/bordered_trans_background" >
+				
+				    <LinearLayout
+				        android:layout_width="@dimen/filter_preview_size"
+				        android:layout_height="@dimen/filter_preview_size"
+				        android:orientation="vertical" >
+				
+				        <ImageView
+				            android:id="@+id/imageViewFilterNone"
+				            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+				            android:layout_marginLeft="1dp"
+				            android:layout_marginRight="1dp"
+				            android:layout_marginTop="1dp"
+				            android:layout_weight="0.8"
+				            android:background="@color/black"
+				            android:contentDescription="@string/app_name"
+				            android:scaleType="fitCenter"
+				            android:src="@drawable/filter_none" />
+				
+				        <TextView
+				            android:id="@+id/textViewFilterNone"
+				            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+				            android:layout_marginBottom="1dp"
+				            android:layout_marginLeft="1dp"
+				            android:layout_marginRight="1dp"
+				            android:layout_weight="0.2"
+				            android:background="@color/black"
+				            android:ellipsize="none"
+				            android:gravity="center"
+				            android:marqueeRepeatLimit="marquee_forever"
+				            android:maxLines="2"
+				            android:paddingLeft="3dp"
+				            android:paddingRight="3dp"
+				            android:text="@string/none"
+				            android:textColor="@color/white"
+				            android:textSize="@dimen/common_font_size_2" />
+				
+				    </LinearLayout>
+				
+				    <Button
+				        android:id="@+id/buttonFilterNone"
+				        android:layout_width="@dimen/filter_preview_size"
+				        android:layout_height="@dimen/filter_preview_size"
+				        android:background="@color/clear" />
+				
+				</RelativeLayout>
+				
+                <RelativeLayout
+                    android:layout_width="@dimen/filter_preview_size"
+                    android:layout_height="@dimen/filter_preview_size"
+                    android:layout_marginBottom="@dimen/common_padding_y"
+                    android:background="@drawable/bordered_trans_background" >
+				
+				    <LinearLayout
+				        android:layout_width="@dimen/filter_preview_size"
+				        android:layout_height="@dimen/filter_preview_size"
+				        android:orientation="vertical" >
+				
+				        <ImageView
+				            android:id="@+id/imageViewFilterVintage"
+				            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+				            android:layout_marginLeft="1dp"
+				            android:layout_marginRight="1dp"
+				            android:layout_marginTop="1dp"
+				            android:layout_weight="0.8"
+				            android:background="@color/black"
+				            android:contentDescription="@string/app_name"
+				            android:scaleType="fitCenter"
+				            android:src="@drawable/filter_vintage" />
+				
+				        <TextView
+				            android:id="@+id/textViewFilterVintage"
+				            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+				            android:layout_marginBottom="1dp"
+				            android:layout_marginLeft="1dp"
+				            android:layout_marginRight="1dp"
+				            android:layout_weight="0.2"
+				            android:background="@color/black"
+				            android:ellipsize="none"
+				            android:gravity="center"
+				            android:marqueeRepeatLimit="marquee_forever"
+				            android:maxLines="2"
+				            android:paddingLeft="3dp"
+				            android:paddingRight="3dp"
+				            android:text="@string/vintage"
+				            android:textColor="@color/white"
+				            android:textSize="@dimen/common_font_size_2" />
+				
+				    </LinearLayout>
+				
+				    <Button
+				        android:id="@+id/buttonFilterVintage"
+				        android:layout_width="@dimen/filter_preview_size"
+				        android:layout_height="@dimen/filter_preview_size"
+				        android:background="@color/clear" />
+				
+				</RelativeLayout>
+				
+                <RelativeLayout
+                    android:layout_width="@dimen/filter_preview_size"
+                    android:layout_height="@dimen/filter_preview_size"
+                    android:layout_marginBottom="@dimen/common_padding_y"
+                    android:background="@drawable/bordered_trans_background" >
+				
+				    <LinearLayout
+				        android:layout_width="@dimen/filter_preview_size"
+				        android:layout_height="@dimen/filter_preview_size"
+				        android:orientation="vertical" >
+				
+				        <ImageView
+				            android:id="@+id/imageViewFilterVignette"
+				            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+				            android:layout_marginLeft="1dp"
+				            android:layout_marginRight="1dp"
+				            android:layout_marginTop="1dp"
+				            android:layout_weight="0.8"
+				            android:background="@color/black"
+				            android:contentDescription="@string/app_name"
+				            android:scaleType="fitCenter"
+				            android:src="@drawable/filter_vignette" />
+				
+				        <TextView
+				            android:id="@+id/textViewFilterVignette"
+				            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+				            android:layout_marginBottom="1dp"
+				            android:layout_marginLeft="1dp"
+				            android:layout_marginRight="1dp"
+				            android:layout_weight="0.2"
+				            android:background="@color/black"
+				            android:ellipsize="none"
+				            android:gravity="center"
+				            android:marqueeRepeatLimit="marquee_forever"
+				            android:maxLines="2"
+				            android:paddingLeft="3dp"
+				            android:paddingRight="3dp"
+				            android:text="@string/vignette"
+				            android:textColor="@color/white"
+				            android:textSize="@dimen/common_font_size_2" />
+				
+				    </LinearLayout>
+				
+				    <Button
+				        android:id="@+id/buttonFilterVignette"
+				        android:layout_width="@dimen/filter_preview_size"
+				        android:layout_height="@dimen/filter_preview_size"
+				        android:background="@color/clear" />
+				
+				</RelativeLayout>
+				
+                <RelativeLayout
+                    android:layout_width="@dimen/filter_preview_size"
+                    android:layout_height="@dimen/filter_preview_size"
+                    android:layout_marginBottom="@dimen/common_padding_y"
+                    android:background="@drawable/bordered_trans_background" >
+				
+				    <LinearLayout
+				        android:layout_width="@dimen/filter_preview_size"
+				        android:layout_height="@dimen/filter_preview_size"
+				        android:orientation="vertical" >
+				
+				        <ImageView
+				            android:id="@+id/imageViewFilterGrayscale"
+				            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+				            android:layout_marginLeft="1dp"
+				            android:layout_marginRight="1dp"
+				            android:layout_marginTop="1dp"
+				            android:layout_weight="0.8"
+				            android:background="@color/black"
+				            android:contentDescription="@string/app_name"
+				            android:scaleType="fitCenter"
+				            android:src="@drawable/filter_grayscale" />
+				
+				        <TextView
+				            android:id="@+id/textViewFilterGrayscale"
+				            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+				            android:layout_marginBottom="1dp"
+				            android:layout_marginLeft="1dp"
+				            android:layout_marginRight="1dp"
+				            android:layout_weight="0.2"
+				            android:background="@color/black"
+				            android:ellipsize="none"
+				            android:gravity="center"
+				            android:marqueeRepeatLimit="marquee_forever"
+				            android:maxLines="2"
+				            android:paddingLeft="3dp"
+				            android:paddingRight="3dp"
+				            android:text="@string/grayscale"
+				            android:textColor="@color/white"
+				            android:textSize="@dimen/common_font_size_2" />
+				
+				    </LinearLayout>
+				
+				    <Button
+				        android:id="@+id/buttonFilterGrayscale"
+				        android:layout_width="@dimen/filter_preview_size"
+				        android:layout_height="@dimen/filter_preview_size"
+				        android:background="@color/clear" />
+				
+				</RelativeLayout>
+				
+                <RelativeLayout
+                    android:layout_width="@dimen/filter_preview_size"
+                    android:layout_height="@dimen/filter_preview_size"
+                    android:layout_marginBottom="@dimen/common_padding_y"
+                    android:background="@drawable/bordered_trans_background" >
+				
+				    <LinearLayout
+				        android:layout_width="@dimen/filter_preview_size"
+				        android:layout_height="@dimen/filter_preview_size"
+				        android:orientation="vertical" >
+				
+				        <ImageView
+				            android:id="@+id/imageViewFilterSepiaTones"
+				            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+				            android:layout_marginLeft="1dp"
+				            android:layout_marginRight="1dp"
+				            android:layout_marginTop="1dp"
+				            android:layout_weight="0.8"
+				            android:background="@color/black"
+				            android:contentDescription="@string/app_name"
+				            android:scaleType="fitCenter"
+				            android:src="@drawable/filter_sepiatones" />
+				
+				        <TextView
+				            android:id="@+id/textViewFilterSepiaTones"
+				            android:layout_width="match_parent"
+				            android:layout_height="0dp"
+				            android:layout_marginBottom="1dp"
+				            android:layout_marginLeft="1dp"
+				            android:layout_marginRight="1dp"
+				            android:layout_weight="0.2"
+				            android:background="@color/black"
+				            android:ellipsize="none"
+				            android:gravity="center"
+				            android:marqueeRepeatLimit="marquee_forever"
+				            android:maxLines="2"
+				            android:paddingLeft="3dp"
+				            android:paddingRight="3dp"
+				            android:text="@string/sepia_tones"
+				            android:textColor="@color/white"
+				            android:textSize="@dimen/common_font_size_2" />
+				
+				    </LinearLayout>
+				
+				    <Button
+				        android:id="@+id/buttonFilterSepiaTones"
+				        android:layout_width="@dimen/filter_preview_size"
+				        android:layout_height="@dimen/filter_preview_size"
+				        android:background="@color/clear" />
+				
+				</RelativeLayout>
+                
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

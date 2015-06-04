@@ -1,0 +1,33 @@
+<resources>
+
+    <dimen name="common_padding_x">14dip</dimen>
+    <dimen name="common_padding_y">14dip</dimen>
+    <dimen name="common_padding_y2">28dip</dimen>
+    <dimen name="common_padding_y3">42dip</dimen>
+    <dimen name="common_font_size_1">24sp</dimen>
+    <dimen name="common_font_size_2">18sp</dimen>
+    <dimen name="corner_radius">7dp</dimen>
+    
+    <dimen name="content_preview_size">210dip</dimen>
+    <dimen name="content_preview_size_ratio">158dip</dimen>
+    <dimen name="content_scroll_height">238dip</dimen>
+    <dimen name="content_horizontal_spacing">8dip</dimen>
+    <dimen name="audio_path_height">55dip</dimen>
+    <dimen name="filter_preview_size">140dip</dimen>
+    <dimen name="content_button_size">54dip</dimen>
+    
+    <dimen name="menu_width">400dip</dimen>
+    <dimen name="menu_item_height">80dip</dimen>
+    <dimen name="menu_item_left_padding">20dip</dimen>
+    <dimen name="menu_item_font_size">27sp</dimen>
+    <dimen name="menu_left_margin">7dip</dimen>
+    <dimen name="menu_right_margin">7dip</dimen>
+    <dimen name="menu_icon_size">55dip</dimen>
+    <dimen name="menu_item_spacing">15dip</dimen>
+    
+    <dimen name="navigation_bar_height">80dip</dimen>
+    <dimen name="navigation_menuicon_size">55dip</dimen>
+    <dimen name="navigation_menu_left_margin">13dip</dimen>
+    <dimen name="navigation_title_font_size">32sp</dimen>
+
+</resources>

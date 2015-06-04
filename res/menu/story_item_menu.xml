@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/watch_story"
+        android:title="@string/watch" />
+    
+    <item
+        android:id="@+id/delete_story"
+        android:title="@string/delete" />
+    
+</menu>

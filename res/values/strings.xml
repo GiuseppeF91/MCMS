@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My City My Stories</string>
+    <string name="app_id">816218145105400</string>
+    
+    <string name="mystories">My Stories</string>
+    <string name="profile">Profile</string>
+    <string name="write_photo_story">Write Photo Story</string>
+    <string name="write_video_story">Write Video Story</string>
+    <string name="instruction_photo">Select photos:</string>
+    <string name="instruction_video">Select videos:</string>
+    <string name="select_audio_file">Select audio file:</string>
+    <string name="select_transition">Transition:</string>
+    <string name="select_filter">Filter:</string>
+    <string name="done">Done</string>
+    <string name="plus_sign">+</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="record_video">Record Video</string>
+    <string name="pick_gallary">Pick from Gallery</string>
+    <string name="preview">Preview</string>
+    <string name="title">Title</string>
+    <string name="delete">Delete</string>
+    <string name="watch">Watch</string>
+    <string name="none">None</string>
+    <string name="vintage">Vintage</string>
+    <string name="gradient">Gradient</string>
+    <string name="vignette">Vignette</string>
+    <string name="grayscale">Grayscale</string>
+    <string name="sepia_tones">Sepia Tones</string>
+    
+    <string name="share">Share</string>
+    <string name="facebook">Facebook</string>
+    <string name="googleplus">Google+</string>
+    <string name="tumblr">Tumblr</string>
+    
+    <!-- Time related format strings displayed in the carousel below the project preview -->
+    <string name="hours_and_minutes">%1$d hrs %2$d mins</string>
+    <string name="hour_and_minutes">1 hr %d mins</string>
+    <string name="minutes">%d mins</string>
+    <string name="minute_and_seconds">1 min %d secs</string>
+    <string name="seconds">%d secs</string>
+    
+    <!-- Effect names-->
+    <!-- Effect 1 name. -->
+    <string name="effect_pan_zoom">Pan &amp; zoom effect</string>
+    <!-- Effect 2 name. -->
+    <string name="effect_gradient">Gradient effect</string>
+    <!-- Effect 3 name. -->
+    <string name="effect_sepia">Sepia effect</string>
+    <!-- Effect 4 name. -->
+    <string name="effect_negative">Negative effect</string>
+    <!-- Effect 5 name. -->
+    <string name="effect_fifties">Fifties effect</string>
+    <!-- Effect 6 name. -->
+    <string name="effect_color">Color effect</string>
+    
+    <!-- Themes names and titles-->
+    <!-- The label/name for Theme 1. -->
+    <string name="theme_name_travel">Travel</string>
+    <!-- The sample title for Theme 1. -->
+    <string name="theme_travel_title">My trip to California</string>
+    <!-- The sample subtitle for Theme 1. -->
+    <string name="theme_travel_subtitle">San Francisco</string>
+    <!-- The label/name for Theme 2. -->
+    <string name="theme_name_surfing">Surfing</string>
+    <!-- The sample title for Theme 2. -->
+    <string name="theme_surfing_title">My surfing adventure</string>
+    <!-- The sample subtitle for Theme 2. -->
+    <string name="theme_surfing_subtitle">SF Bay</string>
+    <!-- The label/name for Theme 3. -->
+    <string name="theme_name_film">Film</string>
+    <!-- The sample title for Theme 3. -->
+    <string name="theme_film_title">My short movie</string>
+    <!-- The sample subtitle for Theme 3. -->
+    <string name="theme_film_subtitle">Fun on the Bay</string>
+    <!-- The label/name for Theme 4. -->
+    <string name="theme_name_rock_and_roll">Rock and roll</string>
+    <!-- The sample title for Theme 4. -->
+    <string name="theme_rock_and_roll_title">The concert</string>
+    <!-- The sample subtitle for Theme 4. -->
+    <string name="theme_rock_and_roll_subtitle">Two and a half barrels</string>
+    
+    <!-- Transition names-->
+    <!-- The name of the transition using a contour alpha mask. -->
+    <string name="transitions_alpha_countour">Contour alpha</string>
+    <!-- The name of the transition using a diagonal alpha mask. -->
+    <string name="transitions_alpha_diagonal">Diagonal alpha</string>
+    <!-- The name of the crossfade transition. -->
+    <string name="transitions_crossfade">Crossfade</string>
+    <!-- The name of the fade to and from black transition. -->
+    <string name="transitions_fade_black">Fade to and from black</string>
+    <!-- The name of the left to right transition. -->
+    <string name="transitions_sliding_right_out_left_in">Sliding right out left in</string>
+    <!-- The name of the right to left transition. -->
+    <string name="transitions_sliding_left_out_right_in">Sliding left out right in</string>
+    <!-- The name of the bottom to top transition. -->
+    <string name="transitions_sliding_top_out_bottom_in">Sliding top out bottom in</string>
+    <!-- The name of the top to bottom transition. -->
+    <string name="transitions_sliding_bottom_out_top_in">Sliding bottom out top in</string>
+
+</resources>

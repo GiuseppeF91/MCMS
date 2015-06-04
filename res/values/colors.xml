@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="clear">#00000000</color>
+    <color name="light_gray">#f0f0f0</color>
+    <color name="dark_gray">#a0a0a0</color>
+    <color name="black_trans">#80000000</color>
+    
+    <color name="menu_background">#333333</color>
+    <color name="menu_item_sel">#c0ffffff</color>
+    <color name="nav_bar_background">#00a2e8</color>
+    <color name="item_border_color">#336666</color>
+    <color name="separator">#336666</color>
+    
+</resources>
+

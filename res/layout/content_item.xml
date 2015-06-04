@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutContentItem"
+    android:layout_width="@dimen/content_preview_size"
+    android:layout_height="@dimen/content_preview_size"
+    android:layout_marginLeft="@dimen/content_horizontal_spacing"
+    android:layout_marginRight="@dimen/content_horizontal_spacing"
+    android:background="@drawable/bordered_trans_background"
+    android:padding="1dp" >
+
+	<ImageView
+	    android:id="@+id/imageViewContentItem"
+	    android:layout_width="@dimen/content_preview_size"
+	    android:layout_height="@dimen/content_preview_size"
+	    android:background="@color/black"
+	    android:contentDescription="@string/app_name"
+	    android:scaleType="fitCenter"
+	    android:src="@drawable/ic_launcher" />
+
+	<TextView
+	    android:id="@+id/textViewContentDuration"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:background="@color/black_trans"
+	    android:lines="1"
+	    android:maxLines="1"
+	    android:maxWidth="@dimen/content_preview_size"
+	    android:padding="3dp"
+	    android:textColor="@color/white"
+	    android:textSize="@dimen/common_font_size_2" />
+
+    <TextView
+        android:id="@+id/textViewContentItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black_trans"
+        android:inputType="textMultiLine"
+        android:maxLines="2"
+        android:maxWidth="@dimen/content_preview_size"
+        android:padding="3dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_font_size_2" />
+
+    <ImageButton
+        android:id="@+id/buttonContentItem"
+        android:layout_width="@dimen/content_button_size"
+        android:layout_height="@dimen/content_button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:background="@color/clear"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/content_menu" />
+
+    <ImageButton
+        android:id="@+id/buttonContentFilter"
+        android:layout_width="@dimen/content_button_size"
+        android:layout_height="@dimen/content_button_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/clear"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/content_filter" />
+
+</RelativeLayout>

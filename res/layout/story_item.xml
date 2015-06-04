@@ -1,0 +1,27 @@
+<com.rjafri.mcms.views.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutStoryItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bordered_background" >
+
+    <ImageView
+        android:id="@+id/imageViewStoryItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/black"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/buttonStoryItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/clear" />
+
+</com.rjafri.mcms.views.SquareLayout>

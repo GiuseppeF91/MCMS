@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slidemenu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/menu_width"
+    android:layout_height="match_parent"
+    slidemenu:layout_role="primaryMenu"
+    android:background="@color/menu_background" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/menu_left_margin"
+        android:layout_marginRight="@dimen/menu_right_margin" >
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dark_gray" />
+
+        <RelativeLayout
+            android:id="@+id/mnuItemMyStories"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_item_height"
+            android:background="@drawable/menu_item_bg"
+            android:paddingLeft="@dimen/menu_item_left_padding" >
+            
+            <ImageView
+                android:id="@+id/menu_icon1"
+                android:layout_width="@dimen/menu_icon_size"
+                android:layout_height="@dimen/menu_icon_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/mystories" />
+
+            <TextView
+                android:id="@+id/textViewMyStories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/menu_item_spacing"
+                android:layout_toRightOf="@id/menu_icon1"
+                android:gravity="center_vertical"
+                android:text="@string/mystories"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_item_font_size" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_toRightOf="@id/menu_icon1"
+                android:layout_marginLeft="@dimen/menu_item_spacing"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dark_gray" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/mnuItemProfile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_item_height"
+            android:background="@drawable/menu_item_bg"
+            android:paddingLeft="@dimen/menu_item_left_padding" >
+            
+            <ImageView
+                android:id="@+id/menu_icon2"
+                android:layout_width="@dimen/menu_icon_size"
+                android:layout_height="@dimen/menu_icon_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/textViewProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/menu_item_spacing"
+                android:layout_toRightOf="@id/menu_icon2"
+                android:gravity="center_vertical"
+                android:text="@string/profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_item_font_size" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_toRightOf="@id/menu_icon2"
+                android:layout_marginLeft="@dimen/menu_item_spacing"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dark_gray" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/mnuItemWritePStory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_item_height"
+            android:background="@drawable/menu_item_bg"
+            android:paddingLeft="@dimen/menu_item_left_padding" >
+            
+            <ImageView
+                android:id="@+id/menu_icon3"
+                android:layout_width="@dimen/menu_icon_size"
+                android:layout_height="@dimen/menu_icon_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/photostory" />
+
+            <TextView
+                android:id="@+id/textViewPhotoStory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/menu_item_spacing"
+                android:layout_toRightOf="@id/menu_icon3"
+                android:gravity="center_vertical"
+                android:text="@string/write_photo_story"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_item_font_size" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_toRightOf="@id/menu_icon3"
+                android:layout_marginLeft="@dimen/menu_item_spacing"
+                android:layout_alignParentBottom="true"
+                android:background="@color/dark_gray" />
+            
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/mnuItemWriteVStory"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_item_height"
+            android:background="@drawable/menu_item_bg"
+            android:paddingLeft="@dimen/menu_item_left_padding" >
+            
+            <ImageView
+                android:id="@+id/menu_icon4"
+                android:layout_width="@dimen/menu_icon_size"
+                android:layout_height="@dimen/menu_icon_size"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/videostory" />
+
+            <TextView
+                android:id="@+id/textViewVideoStory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/menu_item_spacing"
+                android:layout_toRightOf="@id/menu_icon4"
+                android:gravity="center_vertical"
+                android:text="@string/write_video_story"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menu_item_font_size" />
+            
+        </RelativeLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/dark_gray" />
+        
+    </LinearLayout>
+    
+</ScrollView>

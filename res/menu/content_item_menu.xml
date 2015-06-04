@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/preview_content"
+        android:title="@string/preview" />
+    
+    <item
+        android:id="@+id/set_title"
+        android:title="@string/title" />
+    
+    <item
+        android:id="@+id/delete_content"
+        android:title="@string/delete" />
+
+</menu>
